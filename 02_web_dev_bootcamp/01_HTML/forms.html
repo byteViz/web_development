@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+      <p>
+        <label for="user">enter a username</label>
+        <input type="text" placeholder="username" name="username" id="user" />
+      </p>
+      <p>
+        <label for="pass">Enter a password</label>
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          id="pass"
+          minlength="8"
+        />
+      </p>
+      <p>
+        <input type="color" />
+      </p>
+      <p><input type="number" placeholder="enter a number" /></p>
+      <p><input type="time" /></p>
+      <button>Submit</button>
+    </form>
+    <form action="https://www.google.co.in/search">
+      <label for="query">Search google</label>
+      <input type="text" name="q" id="query" required />
+      <button>Search</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+      <p>Pick yout choice of Toppings</p>
+      <label for="chk-pineapple">Pineapple</label>
+      <input type="checkbox" name="pinapple" id="chk-pineapple" checked />
+      <label for="chk-black-olive">Black Olives</label>
+      <input type="checkbox" name="black-olive" id="chk-black-olive" />
+      <br />
+      <input type="radio" name="shirt-size" id="S" value="s" />
+      <label for="S">S</label>
+      <input type="radio" name="shirt-size" id="M" value="m" />
+      <label for="M">M</label>
+      <input type="radio" name="shirt-size" id="L" value="l" />
+      <label for="L">L</label>
+      <br />
+      <label for="pet-select">Please select your pet</label>
+      <select name="pets" id="pet-select">
+        <option value="" selected>--Please choose--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="parrot">Parrot</option>
+      </select>
+      <br />
+      <input
+        type="range"
+        name="volume"
+        id="volume"
+        min="0"
+        max="100"
+        step="2"
+      />
+      <label for="volume">volume</label>
+      <br />
+      <label for="feedback">Please provide us your feedback</label> <br />
+      <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+    </form>
+  </body>
+</html>
